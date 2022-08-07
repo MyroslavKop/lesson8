@@ -2,36 +2,35 @@
 
 // Задача №1---------------------------------------/
 
-// let result;
-// function sumTwoSmallestNumbers(array) {
+// function sumTwoSmallestNumbers(...array) {
 //   let copyArray = [...array];
 //   let copyArraySort = copyArray.sort((a, b) => a - b);
-//   result =
-//     copyArray.length < 2
-//       ? console.error("...")
-//       : copyArraySort[0] + copyArraySort[1];
-//   return result;
+//   if (copyArraySort.length < 2) {
+//     return console.error("...");
+//   } else {
+//     return copyArraySort[0] + copyArraySort[1];
+//   }
 // }
-// console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77]));
-// console.log(sumTwoSmallestNumbers([10, 343, 345, 3, 13, 22]));
-// console.log(sumTwoSmallestNumbers([1]));
+// console.log(sumTwoSmallestNumbers(19, 5, 42, 2, 77));
+// console.log(sumTwoSmallestNumbers(10, 343, 345, 3, 13, 22));
+// console.log(sumTwoSmallestNumbers(1));
 
 // Задача №2---------------------------------------/
 
 // function createCalculator(x) {
-//   let count = x;
+//   let result = x;
 //   return {
 //     sum: function (y) {
-//       return (count = count + y);
+//       return (result = result + y);
 //     },
 //     mult: function (y) {
-//       return (count = count * y);
+//       return (result = result * y);
 //     },
 //     min: function (y) {
-//       return (count = count - y);
+//       return (result = result - y);
 //     },
 //     div: function (y) {
-//       return (count = count / y);
+//       return (result = result / y);
 //     },
 //   };
 // }
